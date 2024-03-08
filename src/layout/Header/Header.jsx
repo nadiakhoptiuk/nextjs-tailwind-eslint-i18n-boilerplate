@@ -1,16 +1,17 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
-// import { fetchTest } from '@/admin/requests/fetchTest';
+import { Container } from '@/components';
 
-export const Header = async () => {
-  // const data = await fetchTest();
-
+export const Header = ({ data }) => {
   return (
-    <header className="relative z-20 pb-6 pt-[22px] md:py-9">
-      <div className="container flex items-center justify-between">
-        {/* <h2>{data.title}</h2> */}
-        {/* <p>{data.paragraph}</p> */}
-      </div>
+    <header>
+      <Container>
+        <p>{data}</p>
+      </Container>
     </header>
   );
+};
+
+Header.propTypes = {
+  data: PropTypes.string.isRequired,
 };

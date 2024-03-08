@@ -1,10 +1,10 @@
 import { Inter } from 'next/font/google';
 
-import { Header } from '@/layout/Header';
+import { Header } from '@/layout';
 
 import { getMetaByLang } from '@/utils/getMetaData';
 import { getDictionary } from '@/utils/getDictionary';
-import { i18n } from '@/i18n';
+import { i18n } from '../../../i18n';
 
 import './globals.css';
 
