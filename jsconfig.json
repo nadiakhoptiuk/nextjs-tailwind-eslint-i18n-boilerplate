@@ -1,9 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "public/*": ["./public/*"],
-      "dictionaries/*": ["./dictionaries/*"]
+      "@/admin/*": ["admin/*"],
+      "@/components/*": ["src/components/*"],
+      "@/layout/*": ["src/layout/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/sections/*": ["src/sections/*"],
+      "@/public/*": ["public/*"],
+      "@/src/*": ["src/*"],
+      "@/*": ["./*"]
     },
     "resolveJsonModule": true
   },
